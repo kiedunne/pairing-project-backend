@@ -16,6 +16,8 @@ configurations {
 }
 
 dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
     implementation group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: '2.4.3'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.4.3'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
