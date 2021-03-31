@@ -1,4 +1,10 @@
 com/personal/pairingproject/Application.java
  com.personal.pairingproject.Application
+com/personal/pairingproject/model/TodoItem.java
+ com.personal.pairingproject.model.TodoItem
 com/personal/pairingproject/controller/MainController.java
  com.personal.pairingproject.controller.MainController
+com/personal/pairingproject/service/TodoService.java
+ com.personal.pairingproject.service.TodoService
+com/personal/pairingproject/persistence/TodoRepository.java
+ com.personal.pairingproject.persistence.TodoRepository
