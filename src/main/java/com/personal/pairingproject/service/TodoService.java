@@ -1,13 +1,23 @@
 package com.personal.pairingproject.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.personal.pairingproject.model.TodoNew;
+import com.personal.pairingproject.persistence.TodoRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Component
-public class TodoService {
+@AllArgsConstructor
 
+public class TodoService {
+    private final TodoRepository todoRepository;
     public boolean addTodo(String todo) {
+        // So here's where the issue is, I'm using this out of the box builder fn to save but its saving the entire request string!
+        todoRepository.save(TodoNew.builder().text(todo).build());
         return true;
+    }
+    public List<TodoNew> allTodos() {
+        return todoRepository.findAll();
     }
 }

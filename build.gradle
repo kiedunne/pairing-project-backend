@@ -25,7 +25,10 @@ dependencies {
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.4.3'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-cache', version: '2.4.3'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-undertow', version: '2.4.3'
-    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.1.9.RELEASE'
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.4.3'
+    implementation group: 'org.postgresql', name: 'postgresql', version: '9.4.1212'
+    implementation group: 'jakarta.xml.bind', name: 'jakarta.xml.bind-api', version: '2.3.2'
+    implementation group: 'org.glassfish.jaxb', name: 'jaxb-runtime', version: '2.3.2'
 }
 
 test {
